@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace AdventOfCode2023.Days
 {
@@ -95,7 +90,6 @@ namespace AdventOfCode2023.Days
                 }
             }
 
-            List<Point> checkPoints = new List<Point>();
             var areas = Markers.Where(d => d.Marker == '*').Select(d => d.GenerateCheckArea()).ToList();
 
             List<int> products = new List<int>();
